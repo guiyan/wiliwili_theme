@@ -1,0 +1,1246 @@
+diff --git a/resources/xml/activity/hint_activity.xml b/resources/xml/activity/hint_activity.xml
+index 0127817..b289bc2 100644
+--- a/resources/xml/activity/hint_activity.xml
++++ b/resources/xml/activity/hint_activity.xml
+@@ -1,6 +1,6 @@
+ <brls:AppletFrame
+         iconInterpolation="linear"
+-        backgroundColor="@theme/brls/background"
++        backgroundColor="#FFFFFF"
+         headerHidden="true"
+         footerHidden="true">
+     <brls:Box
+diff --git a/resources/xml/activity/main.xml b/resources/xml/activity/main.xml
+index befcefa..cfbec4b 100644
+--- a/resources/xml/activity/main.xml
++++ b/resources/xml/activity/main.xml
+@@ -1,74 +1,77 @@
+-<brls:AppletFrame
+-        iconInterpolation="linear"
+-        headerHidden="true"
+-        footerHidden="false">
+-    <brls:Box
+-            axis="column"
+-            width="100%"
+-            height="100%">
+-        <AutoTabFrame
+-                id="main/tabFrame"
+-                grow="1"
+-                tabBackgroundColor="@theme/color/grey_1"
+-                tabItemActiveTextColor="@theme/color/bilibili"
+-                disableNavigationDown="true"
+-                defaultTab="0"
+-                sidebarPosition="left">
+-
+-            <Tab label=""
+-                 fontSize="18"
+-                 icon="@res/svg/ico-home.svg"
+-                 iconActivate="@res/svg/ico-home-activate.svg">
+-                <HomeTab/>
+-            </Tab>
+-
+-            <Tab label=""
+-                 fontSize="18"
+-                 icon="@res/svg/ico-dynamic.svg"
+-                 iconActivate="@res/svg/ico-dynamic-activate.svg">
+-                <DynamicTab/>
+-            </Tab>
+-
+-            <Tab label=""
+-                 fontSize="18"
+-                 focusDown="main/inbox"
+-                 icon="@res/svg/ico-mine.svg"
+-                 iconActivate="@res/svg/ico-mine-activate.svg">
+-                <MineTab/>
+-            </Tab>
+-        </AutoTabFrame>
+-        <brls:Box
+-                wireframe="false"
+-                width="100"
+-                axis="column"
+-                justifyContent="center"
+-                alignItems="center"
+-                positionType="absolute"
+-                positionBottom="20">
+-            <CustomButton
+-                id="main/inbox"
+-                focusable="true"
+-                highlightCornerRadius="50"
+-                cornerRadius="50"
+-                marginBottom="10"
+-                wireframe="false">
+-                <SVGImage
+-                        width="48"
+-                        height="48"
+-                        SVG="@res/svg/ico-inbox.svg"/>
+-            </CustomButton>
+-
+-            <CustomButton
+-                    id="main/setting"
+-                    focusable="true"
+-                    highlightCornerRadius="50"
+-                    cornerRadius="50"
+-                    wireframe="false">
+-                <SVGImage
+-                        width="48"
+-                        height="48"
+-                        SVG="@res/svg/ico-setting.svg"/>
+-            </CustomButton>
+-        </brls:Box>
+-    </brls:Box>
+-</brls:AppletFrame>
++<brls:AppletFrame
++        backgroundColor="#FFFFFF"
++        iconInterpolation="linear"
++        headerHidden="true"
++        footerHidden="false">
++    <brls:Box
++            axis="column"
++            width="100%"
++            height="100%"
++            backgroundColor="#FFFFFF">
++        <AutoTabFrame
++                id="main/tabFrame"
++                grow="1"
++                tabBackgroundColor="@theme/color/grey_1"
++                tabItemActiveTextColor="@theme/color/bilibili"
++                disableNavigationDown="true"
++                defaultTab="0"
++                sidebarPosition="left">
++
++            <Tab label=""
++                 fontSize="18"
++                 icon="@res/svg/ico-home.svg"
++                 iconActivate="@res/svg/ico-home-activate.svg">
++                <HomeTab/>
++            </Tab>
++
++            <Tab label=""
++                 fontSize="18"
++                 icon="@res/svg/ico-dynamic.svg"
++                 iconActivate="@res/svg/ico-dynamic-activate.svg">
++                <DynamicTab/>
++            </Tab>
++
++            <Tab label=""
++                 fontSize="18"
++                 focusDown="main/inbox"
++                 icon="@res/svg/ico-mine.svg"
++                 iconActivate="@res/svg/ico-mine-activate.svg">
++                <MineTab/>
++            </Tab>
++        </AutoTabFrame>
++        <brls:Box
++                id="main/user_box"
++                wireframe="false"
++                width="100"
++                axis="column"
++                justifyContent="center"
++                alignItems="center"
++                positionType="absolute"
++                positionBottom="20">
++            <CustomButton
++                id="main/inbox"
++                focusable="true"
++                highlightCornerRadius="50"
++                cornerRadius="50"
++                marginBottom="10"
++                wireframe="false">
++                <SVGImage
++                        width="48"
++                        height="48"
++                        SVG="@res/svg/ico-inbox.svg"/>
++            </CustomButton>
++
++            <CustomButton
++                    id="main/setting"
++                    focusable="true"
++                    highlightCornerRadius="50"
++                    cornerRadius="50"
++                    wireframe="false">
++                <SVGImage
++                        width="48"
++                        height="48"
++                        SVG="@res/svg/ico-setting.svg"/>
++            </CustomButton>
++        </brls:Box>
++    </brls:Box>
++</brls:AppletFrame>
+diff --git a/resources/xml/activity/pgc_index_activity.xml b/resources/xml/activity/pgc_index_activity.xml
+index 02e2269..c029b07 100644
+--- a/resources/xml/activity/pgc_index_activity.xml
++++ b/resources/xml/activity/pgc_index_activity.xml
+@@ -1,4 +1,5 @@
+ <brls:AppletFrame
++        backgroundColor="#FFFFFF"
+         iconInterpolation="linear"
+         headerHidden="true"
+         footerHidden="false">
+diff --git a/resources/xml/activity/player_activity.xml b/resources/xml/activity/player_activity.xml
+index 17cd9e9..7d25ae6 100644
+--- a/resources/xml/activity/player_activity.xml
++++ b/resources/xml/activity/player_activity.xml
+@@ -30,6 +30,7 @@
+             <brls:Box
+                     id="video_detail_info_box"
+                     wireframe="false"
++                    backgroundColor="#FFFFFF"
+                     width="100%"
+                     height="177"
+                     axis="column">
+@@ -45,7 +46,7 @@
+                     <brls:Label
+                             id="video/title"
+                             wireframe="false"
+-                            fontSize="24"
++                            fontSize="21"
+                             marginLeft="10"
+                             singleLine="true"/>
+                 </brls:Box>
+@@ -55,12 +56,12 @@
+                         id="video_detail_info_box"
+                         wireframe="false"
+                         width="100%"
+-                        height="auto">
++                        height="100"
++                        alignItems="center">
+                     <brls:Box
+                             wireframe="false"
+-                            width="60%"
+-                            height="100%"
+-                            maxHeight="100"
++                            width="auto"
++                            height="100"
+                             alignItems="flexStart"
+                             axis="column"
+                             justifyContent="center">
+@@ -69,16 +70,17 @@
+                                 wireframe="false"
+                                 marginLeft="10"
+                                 id="video_author"
+-                                width="100%"
++                                width="auto"
+                                 height="80%"/>
+                     </brls:Box>
+ 
+                     <brls:Box
+                             wireframe="false"
+-                            width="40%"
+-                            marginLeft="@style/brls/highlight/shadow_offset"
+-                            justifyContent="spaceEvenly"
+-                            marginBottom="20"
++                            width="auto"
++                            height="100"
++                            marginLeft="16"
++                            marginBottom="14"
++                            justifyContent="flexStart"
+                             alignItems="center">
+                         <brls:Box
+                                 highlightCornerRadius="50"
+@@ -87,17 +89,17 @@
+                                 axis="column"
+                                 alignItems="center"
+                                 wireframe="false"
+-                                focusable="true">
++                                focusable="true"
++                                marginRight="22">
+                             <SVGImage
+                                     id="video/btn/agree"
+-                                    width="48"
+-                                    height="48"/>
++                                    width="36"
++                                    height="36"/>
+                             <brls:Label
+                                     id="video/label/agree"
+-                                    positionType="absolute"
+-                                    positionBottom="-30"
++                                    marginTop="6"
+                                     culled="false"
+-                                    width="120"
++                                    width="auto"
+                                     horizontalAlign="center"
+                                     textColor="@theme/font/grey"
+                                     fontSize="16"
+@@ -111,20 +113,18 @@
+                                 padding="4"
+                                 axis="column"
+                                 alignItems="center"
+-                                width="56"
+-                                height="56"
++                                marginRight="22"
+                                 focusable="true">
+                             <SVGImage
+                                     id="video/btn/coin"
+                                     positionTop="4"
+-                                    width="40"
+-                                    height="40"/>
++                                    width="30"
++                                    height="30"/>
+                             <brls:Label
+                                     id="video/label/coin"
+-                                    positionType="absolute"
+-                                    positionBottom="-30"
++                                    marginTop="6"
+                                     culled="false"
+-                                    width="120"
++                                    width="auto"
+                                     horizontalAlign="center"
+                                     textColor="@theme/font/grey"
+                                     fontSize="16"
+@@ -136,22 +136,20 @@
+                                 highlightCornerRadius="50"
+                                 cornerRadius="50"
+                                 padding="4"
+-                                width="56"
+-                                height="56"
++                                marginRight="22"
+                                 axis="column"
+                                 alignItems="center"
+                                 focusable="true">
+                             <SVGImage
+                                     id="video/btn/favorite"
+                                     positionTop="4"
+-                                    width="40"
+-                                    height="40"/>
++                                    width="30"
++                                    height="30"/>
+                             <brls:Label
+                                     id="video/label/favorite"
+-                                    positionType="absolute"
+-                                    positionBottom="-30"
++                                    marginTop="6"
+                                     culled="false"
+-                                    width="120"
++                                    width="auto"
+                                     horizontalAlign="center"
+                                     textColor="@theme/font/grey"
+                                     fontSize="16"
+@@ -163,23 +161,21 @@
+                                 highlightCornerRadius="50"
+                                 cornerRadius="50"
+                                 padding="4"
+-                                width="56"
+-                                height="56"
++                                
+                                 axis="column"
+                                 alignItems="center"
+                                 focusable="true">
+                             <SVGImage
+                                     id="video/btn/qr"
+                                     positionTop="4"
+-                                    width="40"
+-                                    height="40"
++                                    width="30"
++                                    height="30"
+                                     SVG="@res/svg/bpx-svg-sprite-share.svg"/>
+                             <brls:Label
+                                     id="video/label/qr"
+-                                    positionType="absolute"
+-                                    positionBottom="-30"
++                                    marginTop="6"
+                                     culled="false"
+-                                    width="120"
++                                    width="auto"
+                                     horizontalAlign="center"
+                                     textColor="@theme/font/grey"
+                                     fontSize="16"
+@@ -305,7 +301,7 @@
+                     width="100%"
+                     height="100%"
+                     demandMode="false"
+-                    tabBackgroundColor="@theme/color/grey_1"
++                    tabBackgroundColor="#FFFFFF"
+                     tabItemActiveTextColor="@theme/color/bilibili"
+                     defaultTab="0"
+                     sidebarPosition="top">
+@@ -313,16 +309,18 @@
+                 <Tab label="@i18n/wiliwili/player/comment"
+                      fontSize="18">
+                     <brls:Box
+-                            marginTop="12">
++                            marginTop="12"
++                            backgroundColor="#FFFFFF">
+                         <RecyclingGrid
+                                 id="video/comment/recyclingGrid"
+-                                paddingLeft="20"
+-                                paddingRight="30"
++                                paddingLeft="17"
++                                paddingRight="17"
+                                 grow="1"
+                                 spanCount="1"
+                                 itemSpace="10"
+                                 flowMode="true"
+                                 itemHeight="100"
++                                backgroundColor="#FFFFFF"
+                                 wireframe="false"/>
+                     </brls:Box>
+                 </Tab>
+diff --git a/resources/xml/activity/search_activity.xml b/resources/xml/activity/search_activity.xml
+index 4e4cbc8..669a269 100644
+--- a/resources/xml/activity/search_activity.xml
++++ b/resources/xml/activity/search_activity.xml
+@@ -1,4 +1,5 @@
+ <brls:AppletFrame
++        backgroundColor="#FFFFFF"
+         iconInterpolation="linear"
+         headerHidden="true"
+         footerHidden="false">
+diff --git a/resources/xml/activity/search_activity_tv.xml b/resources/xml/activity/search_activity_tv.xml
+index 66806d5..65264ee 100644
+--- a/resources/xml/activity/search_activity_tv.xml
++++ b/resources/xml/activity/search_activity_tv.xml
+@@ -1,4 +1,5 @@
+ <brls:AppletFrame
++        backgroundColor="#FFFFFF"
+         iconInterpolation="linear"
+         headerHidden="true"
+         footerHidden="false">
+diff --git a/resources/xml/activity/setting_activity.xml b/resources/xml/activity/setting_activity.xml
+index c7c464e..5276936 100644
+--- a/resources/xml/activity/setting_activity.xml
++++ b/resources/xml/activity/setting_activity.xml
+@@ -1,4 +1,5 @@
+ <brls:AppletFrame
++        backgroundColor="#FFFFFF"
+         iconInterpolation="linear"
+         headerHidden="true"
+         footerHidden="false">
+diff --git a/resources/xml/fragment/home_recommends.xml b/resources/xml/fragment/home_recommends.xml
+index a59b19a..0f1a68a 100644
+--- a/resources/xml/fragment/home_recommends.xml
++++ b/resources/xml/fragment/home_recommends.xml
+@@ -1,6 +1,6 @@
+ <brls:Box
+         axis="column"
+-        marginTop="10"
++        marginTop="4"
+         marginBottom="8"
+         width="auto"
+         height="auto">
+diff --git a/resources/xml/views/user_info.xml b/resources/xml/views/user_info.xml
+index 1849d91..dddc8b0 100644
+--- a/resources/xml/views/user_info.xml
++++ b/resources/xml/views/user_info.xml
+@@ -2,12 +2,15 @@
+         width="auto"
+         height="auto"
+         axis="row"
+-        justifyContent="spaceBetween"
++        justifyContent="flexStart"
+         alignItems="center">
+ 
+     <brls:Box
+             wireframe="false"
+             marginRight="4"
++            height="100%"
++            justifyContent="center"
++            marginBottom="12"
+             axis="column">
+         <brls:Image
+                 id="userinfo/avatar"
+@@ -15,7 +18,7 @@
+                 maxHeight="90%"
+                 aspectRatio="1"
+                 scalingType="fit"
+-                marginLeft="10"
++                marginLeft="4"
+                 borderThickness="4"
+                 borderColor="@theme/color/grey_1"
+                 cornerRadius="100"
+@@ -26,43 +29,34 @@
+             width="auto"
+             height="100%"
+             axis="column"
+-            grow="1.0"
++            grow="0"
+             marginLeft="10"
+             alignItems="flexStart">
+ 
++        <brls:Box
++                width="auto"
++                height="auto"
++                axis="row"
++                alignItems="center">
++
+         <brls:Label
+                 id="userinfo/label/username"
+                 width="auto"
+                 height="auto"
+                 wireframe="false"
+                 grow="1"
+-                fontSize="20"
++                fontSize="18"
+                 marginBottom="4"
+                 verticalAlign="center"
+                 singleLine="true"
+                 shrink="0"/>
+ 
+-        <brls:Label
+-                id="userinfo/label/misc"
+-                width="auto"
+-                height="auto"
+-                fontSize="16"
+-                grow="1"
+-                marginTop="4"
+-                verticalAlign="center"
+-                singleLine="true"
+-                shrink="0"
+-                wireframe="false"
+-                textColor="@theme/font/grey"/>
+-
+-    </brls:Box>
+-
+     <brls:Box
+             id="userinfo/box/hint"
+             visibility="gone"
+             width="100"
+             height="34"
+-            marginRight="10"
++            marginLeft="16"
+             cornerRadius="6"
+             justifyContent="center"
+             alignItems="center">
+@@ -78,5 +72,22 @@
+                 fontSize="16"
+                 marginTop="1"/>
+     </brls:Box>
++        </brls:Box>
++
++        <brls:Label
++                id="userinfo/label/misc"
++                width="auto"
++                height="auto"
++                fontSize="16"
++                grow="1"
++                marginTop="4"
++                verticalAlign="center"
++                singleLine="true"
++                shrink="0"
++                wireframe="false"
++                textColor="@theme/font/grey"/>
++
++    </brls:Box>
++
+ 
+ </brls:Box>
+\ No newline at end of file
+diff --git a/resources/xml/views/video_card.xml b/resources/xml/views/video_card.xml
+index 3b36236..13ff3c6 100644
+--- a/resources/xml/views/video_card.xml
++++ b/resources/xml/views/video_card.xml
+@@ -14,7 +14,7 @@
+                 height="100%"
+                 width="100%"
+                 image="@res/pictures/video-card-bg.png"
+-                cornerRadius="4"/>
++                cornerRadius="10"/>
+ 
+         <brls:Box
+                 positionBottom="0"
+diff --git a/resources/xml/views/video_comment.xml b/resources/xml/views/video_comment.xml
+index c74593e..2b5c708 100644
+--- a/resources/xml/views/video_comment.xml
++++ b/resources/xml/views/video_comment.xml
+@@ -21,7 +21,7 @@
+             wireframe="false"
+             axis="column"
+             grow="1"
+-            marginLeft="40"
++            marginLeft="4"
+             marginRight="4"
+             marginBottom="8"
+             width="auto"
+@@ -30,6 +30,7 @@
+                 width="auto"
+                 height="auto"
+                 grow="1"
++                fontSize="17"
+                 wireframe="false"
+                 maxRows="6"
+                 showMore="true"
+@@ -37,7 +38,7 @@
+     </brls:Box>
+ 
+     <brls:Box
+-            marginLeft="40"
++            marginLeft="4"
+             marginRight="8"
+             marginBottom="8"
+             shrink="0"
+diff --git a/resources/xml/views/video_view.xml b/resources/xml/views/video_view.xml
+index b017ae2..af3b2a8 100644
+--- a/resources/xml/views/video_view.xml
++++ b/resources/xml/views/video_view.xml
+@@ -8,7 +8,7 @@
+     <brls:Box
+             id="video/osd/top/box"
+             width="100%"
+-            height="80"
++            height="64"
+             backgroundStartColor="#000000CC"
+             backgroundEndColor="#00000000"
+             background="vertical_linear">
+@@ -45,7 +45,7 @@
+                 positionTop="10"
+                 alignItems="center"
+                 justifyContent="center"
+-                height="60"
++                height="48"
+                 width="60">
+             <SVGImage
+                     id="video/osd/cast/icon"
+@@ -69,7 +69,7 @@
+                 positionTop="10"
+                 alignItems="center"
+                 justifyContent="center"
+-                height="60"
++                height="48"
+                 width="60">
+             <SVGImage
+                     id="video/osd/setting/icon"
+@@ -155,8 +155,8 @@
+     <brls:Box
+             id="video/osd/bottom/box"
+             width="100%"
+-            height="120"
+-            alignItems="center"
++            height="100"
++            alignItems="flexStart"
+             axis="row"
+             background="vertical_linear">
+         <brls:Box
+@@ -172,20 +172,20 @@
+                 alignItems="center"
+                 justifyContent="center"
+                 marginLeft="20"
+-                marginBottom="20"
+-                height="100"
+-                width="100">
++                marginTop="6"
++                height="44"
++                width="44">
+             <SVGImage
+                     id="video/osd/toggle/icon"
+                     wireframe="false"
+-                    height="100"
+-                    width="100"
++                    height="44"
++                    width="44"
+                     SVG="@res/svg/bpx-svg-sprite-play.svg"/>
+         </brls:Box>
+         <brls:Box
+                 width="auto"
+                 grow="1"
+-                height="130"
++                height="100"
+                 axis="column">
+             <VideoProgressSlider
+                     focusable="false"
+@@ -193,12 +193,12 @@
+                     focusUp="video/osd/lock/box"
+                     focusRight="video/osd/bottom/progress"
+                     width="100%"
+-                    height="50"
++                    height="36"
+                     marginTop="10"
+                     grow="1"/>
+             <brls:Box
+                     width="100%"
+-                    height="80"
++                    height="54"
+                     alignItems="center"
+                     grow="1">
+                 <brls:Label
+@@ -226,14 +226,16 @@
+                 <brls:Box
+                         id="video/osd/icon/box"
+                         positionType="absolute"
++                        alignItems="center"
++                        positionBottom="4"
+                         positionRight="20">
+                     <brls:Box
+                             id="video/osd/danmaku/box/volume"
+                             hideClickAnimation="true"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60"
+-                            width="60">
++                            height="48"
++                            width="48">
+                         <SVGImage
+                                 id="video/osd/danmaku/volume/icon"
+                                 focusable="true"
+@@ -242,8 +244,8 @@
+                                 hideHighlightBackground="true"
+                                 highlightCornerRadius="30"
+                                 wireframe="false"
+-                                height="30"
+-                                width="30"
++                                height="24"
++                                width="24"
+                                 SVG="@res/svg/bpx-svg-sprite-volume.svg"/>
+                     </brls:Box>
+                     <brls:Box
+@@ -251,8 +253,8 @@
+                             hideClickAnimation="true"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60"
+-                            width="60">
++                            height="48"
++                            width="48">
+                         <SVGImage
+                                 id="video/osd/danmaku/setting/icon"
+                                 focusable="true"
+@@ -261,8 +263,8 @@
+                                 hideHighlightBackground="true"
+                                 highlightCornerRadius="30"
+                                 wireframe="false"
+-                                height="30"
+-                                width="30"
++                                height="24"
++                                width="24"
+                                 SVG="@res/svg/bpx-svg-sprite-danmu-setting.svg"/>
+                     </brls:Box>
+                     <brls:Box
+@@ -270,8 +272,8 @@
+                             hideClickAnimation="true"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60"
+-                            width="60">
++                            height="48"
++                            width="48">
+                         <SVGImage
+                                 id="video/osd/danmaku/icon"
+                                 focusable="true"
+@@ -280,8 +282,8 @@
+                                 hideHighlightBackground="true"
+                                 highlightCornerRadius="30"
+                                 wireframe="false"
+-                                height="30"
+-                                width="30"
++                                height="24"
++                                width="24"
+                                 SVG="@res/svg/bpx-svg-sprite-danmu-switch-on.svg"/>
+                     </brls:Box>
+                     <brls:Box
+@@ -290,7 +292,7 @@
+                             marginRight="10"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60">
++                            height="48">
+                         <brls:Label
+                                 id="video/quality"
+                                 textColor="#FFFFFF"
+@@ -307,7 +309,7 @@
+                             marginRight="10"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60">
++                            height="48">
+                         <brls:Label
+                                 id="video/speed"
+                                 textColor="#FFFFFF"
+@@ -326,7 +328,7 @@
+                             visibility="gone"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60">
++                            height="48">
+                         <brls:Label
+                                 id="show/episode"
+                                 textColor="#FFFFFF"
+@@ -344,8 +346,8 @@
+                             hideClickAnimation="true"
+                             alignItems="center"
+                             justifyContent="center"
+-                            height="60"
+-                            width="60">
++                            height="48"
++                            width="48">
+                         <SVGImage
+                                 id="video/osd/fullscreen/icon"
+                                 wireframe="false"
+@@ -355,8 +357,8 @@
+                                 focusRight="video/osd/fullscreen/icon"
+                                 hideHighlightBackground="true"
+                                 highlightCornerRadius="30"
+-                                height="30"
+-                                width="30"
++                                height="24"
++                                width="24"
+                                 SVG="@res/svg/bpx-svg-sprite-fullscreen.svg"/>
+                     </brls:Box>
+                 </brls:Box>
+@@ -389,8 +391,8 @@
+             visibility="invisible"/>
+ 
+     <brls:Box
+-            width="50"
+-            height="50"
++            width="44"
++            height="44"
+             alignItems="center"
+             hideHighlightBackground="true"
+             highlightCornerRadius="10"
+@@ -409,8 +411,8 @@
+                 id="video/osd/lock/icon"
+                 detachedX="13"
+                 detachedY="13"
+-                height="24"
+-                width="24"
++                height="20"
++                width="20"
+                 SVG="@res/svg/player-unlock.svg"/>
+     </brls:Box>
+ 
+diff --git a/wiliwili/include/activity/main_activity.hpp b/wiliwili/include/activity/main_activity.hpp
+index 234c8ce..0c28819 100644
+--- a/wiliwili/include/activity/main_activity.hpp
++++ b/wiliwili/include/activity/main_activity.hpp
+@@ -35,4 +35,6 @@ private:
+     BRLS_BIND(CustomButton, settingBtn, "main/setting");
+     BRLS_BIND(CustomButton, inboxBtn, "main/inbox");
+     BRLS_BIND(AutoTabFrame, tabFrame, "main/tabFrame");
++    BRLS_BIND(brls::Box, userBox, "main/user_box");
++    brls::Event<>::Subscription userBoxSizeSubscription;
+ };
+diff --git a/wiliwili/include/view/auto_tab_frame.hpp b/wiliwili/include/view/auto_tab_frame.hpp
+index 52b908d..c34893d 100644
+--- a/wiliwili/include/view/auto_tab_frame.hpp
++++ b/wiliwili/include/view/auto_tab_frame.hpp
+@@ -152,6 +152,9 @@ private:
+ 
+ class AutoTabFrame : public brls::Box {
+ public:
++    // 侧栏固定像素宽度（不随窗口尺寸缩放）
++    static constexpr float AUTO_SIDEBAR_FIXED_PX = 100.f;
++
+     AutoTabFrame();
+     void handleXMLElement(tinyxml2::XMLElement* element) override;
+     void addTab(AutoSidebarItem* tab, TabViewCreator creator);
+@@ -243,6 +246,8 @@ private:
+     float itemFontSize = 22;
+     float sidebarWidth = 100;
+ 
++    brls::VoidEvent::Subscription windowSizeSubscription;
++
+     bool disableNavigationRight = false;
+     bool disableNavigationDown  = false;
+ 
+diff --git a/wiliwili/source/activity/main_activity.cpp b/wiliwili/source/activity/main_activity.cpp
+index 2e4042a..1fa2b2b 100644
+--- a/wiliwili/source/activity/main_activity.cpp
++++ b/wiliwili/source/activity/main_activity.cpp
+@@ -1,109 +1,119 @@
+-/*
+-    Copyright 2020-2021 natinusala
+-
+-    Licensed under the Apache License, Version 2.0 (the "License");
+-    you may not use this file except in compliance with the License.
+-    You may obtain a copy of the License at
+-
+-        http://www.apache.org/licenses/LICENSE-2.0
+-
+-    Unless required by applicable law or agreed to in writing, software
+-    distributed under the License is distributed on an "AS IS" BASIS,
+-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+-    See the License for the specific language governing permissions and
+-    limitations under the License.
+-*/
+-
+-#include <borealis/core/touch/tap_gesture.hpp>
+-
+-#include "activity/main_activity.hpp"
+-#include "utils/activity_helper.hpp"
+-#include "utils/dialog_helper.hpp"
+-#include "view/custom_button.hpp"
+-#include "view/auto_tab_frame.hpp"
+-#include "view/svg_image.hpp"
+-
+-MainActivity::~MainActivity() { brls::Logger::debug("del MainActivity"); }
+-
+-void MainActivity::onContentAvailable() {
+-    this->registerAction(
+-        "Settings", brls::ControllerButton::BUTTON_BACK,
+-        [](brls::View* view) -> bool {
+-            Intent::openSetting();
+-            return true;
+-        },
+-        true);
+-
+-    this->registerAction(
+-        "Settings", brls::ControllerButton::BUTTON_START,
+-        [](brls::View* view) -> bool {
+-            Intent::openSetting();
+-            return true;
+-        },
+-        true);
+-
+-    this->settingBtn->registerClickAction([](brls::View* view) -> bool {
+-        Intent::openSetting();
+-        return true;
+-    });
+-
+-    this->settingBtn->getFocusEvent()->subscribe([this](bool value) {
+-        SVGImage* image = dynamic_cast<SVGImage*>(this->settingBtn->getChildren()[0]);
+-        if (!image) return;
+-        if (value) {
+-            image->setImageFromSVGRes("svg/ico-setting-activate.svg");
+-        } else {
+-            image->setImageFromSVGRes("svg/ico-setting.svg");
+-        }
+-    });
+-
+-    this->inboxBtn->setCustomNavigation([this](brls::FocusDirection direction) {
+-        if (tabFrame->getSideBarPosition() == AutoTabBarPosition::LEFT) {
+-            if (direction == brls::FocusDirection::RIGHT) {
+-                return (brls::View*)this->tabFrame->getActiveTab();
+-            } else if (direction == brls::FocusDirection::UP) {
+-                return (brls::View*)this->tabFrame->getSidebar();
+-            }
+-        } else if (tabFrame->getSideBarPosition() == AutoTabBarPosition::TOP) {
+-            if (direction == brls::FocusDirection::DOWN) {
+-                return (brls::View*)this->tabFrame->getActiveTab();
+-            } else if (direction == brls::FocusDirection::LEFT) {
+-                return (brls::View*)this->tabFrame->getSidebar();
+-            }
+-        }
+-        return (brls::View*)nullptr;
+-    });
+-    this->settingBtn->setCustomNavigation([this](brls::FocusDirection direction) {
+-        if (tabFrame->getSideBarPosition() == AutoTabBarPosition::LEFT) {
+-            if (direction == brls::FocusDirection::RIGHT) {
+-                return (brls::View*)this->tabFrame->getActiveTab();
+-            } else if (direction == brls::FocusDirection::UP) {
+-                return (brls::View*)this->inboxBtn;
+-            }
+-        } else if (tabFrame->getSideBarPosition() == AutoTabBarPosition::TOP) {
+-            if (direction == brls::FocusDirection::DOWN) {
+-                return (brls::View*)this->tabFrame->getActiveTab();
+-            } else if (direction == brls::FocusDirection::LEFT) {
+-                return (brls::View*)this->inboxBtn;
+-            }
+-        }
+-        return (brls::View*)nullptr;
+-    });
+-    this->settingBtn->addGestureRecognizer(new brls::TapGestureRecognizer(this->settingBtn));
+-
+-    this->inboxBtn->registerClickAction([](brls::View* view) -> bool {
+-        if (DialogHelper::checkLogin()) Intent::openInbox();
+-        return true;
+-    });
+-
+-    this->inboxBtn->getFocusEvent()->subscribe([this](bool value) {
+-        SVGImage* image = dynamic_cast<SVGImage*>(this->inboxBtn->getChildren()[0]);
+-        if (!image) return;
+-        if (value) {
+-            image->setImageFromSVGRes("svg/ico-inbox-activate.svg");
+-        } else {
+-            image->setImageFromSVGRes("svg/ico-inbox.svg");
+-        }
+-    });
+-    this->inboxBtn->addGestureRecognizer(new brls::TapGestureRecognizer(this->inboxBtn));
++/*
++    Copyright 2020-2021 natinusala
++
++    Licensed under the Apache License, Version 2.0 (the "License");
++    you may not use this file except in compliance with the License.
++    You may obtain a copy of the License at
++
++        http://www.apache.org/licenses/LICENSE-2.0
++
++    Unless required by applicable law or agreed to in writing, software
++    distributed under the License is distributed on an "AS IS" BASIS,
++    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
++    See the License for the specific language governing permissions and
++    limitations under the License.
++*/
++
++#include <borealis/core/touch/tap_gesture.hpp>
++
++#include "activity/main_activity.hpp"
++#include "utils/activity_helper.hpp"
++#include "utils/dialog_helper.hpp"
++#include "view/custom_button.hpp"
++#include "view/auto_tab_frame.hpp"
++#include "view/svg_image.hpp"
++
++MainActivity::~MainActivity()
++{
++    brls::Application::getWindowSizeChangedEvent()->unsubscribe(this->userBoxSizeSubscription);
++    brls::Logger::debug("del MainActivity");
++}
++
++void MainActivity::onContentAvailable() {
++    // 底部“消息/设置”两个图标跟随侧栏宽度做水平居中
++    this->userBox->setWidth(AutoTabFrame::AUTO_SIDEBAR_FIXED_PX / brls::Application::windowScale);
++    this->userBoxSizeSubscription = brls::Application::getWindowSizeChangedEvent()->subscribe([this]() {
++        this->userBox->setWidth(AutoTabFrame::AUTO_SIDEBAR_FIXED_PX / brls::Application::windowScale);
++    });
++
++    this->registerAction(
++        "Settings", brls::ControllerButton::BUTTON_BACK,
++        [](brls::View* view) -> bool {
++            Intent::openSetting();
++            return true;
++        },
++        true);
++
++    this->registerAction(
++        "Settings", brls::ControllerButton::BUTTON_START,
++        [](brls::View* view) -> bool {
++            Intent::openSetting();
++            return true;
++        },
++        true);
++
++    this->settingBtn->registerClickAction([](brls::View* view) -> bool {
++        Intent::openSetting();
++        return true;
++    });
++
++    this->settingBtn->getFocusEvent()->subscribe([this](bool value) {
++        SVGImage* image = dynamic_cast<SVGImage*>(this->settingBtn->getChildren()[0]);
++        if (!image) return;
++        if (value) {
++            image->setImageFromSVGRes("svg/ico-setting-activate.svg");
++        } else {
++            image->setImageFromSVGRes("svg/ico-setting.svg");
++        }
++    });
++
++    this->inboxBtn->setCustomNavigation([this](brls::FocusDirection direction) {
++        if (tabFrame->getSideBarPosition() == AutoTabBarPosition::LEFT) {
++            if (direction == brls::FocusDirection::RIGHT) {
++                return (brls::View*)this->tabFrame->getActiveTab();
++            } else if (direction == brls::FocusDirection::UP) {
++                return (brls::View*)this->tabFrame->getSidebar();
++            }
++        } else if (tabFrame->getSideBarPosition() == AutoTabBarPosition::TOP) {
++            if (direction == brls::FocusDirection::DOWN) {
++                return (brls::View*)this->tabFrame->getActiveTab();
++            } else if (direction == brls::FocusDirection::LEFT) {
++                return (brls::View*)this->tabFrame->getSidebar();
++            }
++        }
++        return (brls::View*)nullptr;
++    });
++    this->settingBtn->setCustomNavigation([this](brls::FocusDirection direction) {
++        if (tabFrame->getSideBarPosition() == AutoTabBarPosition::LEFT) {
++            if (direction == brls::FocusDirection::RIGHT) {
++                return (brls::View*)this->tabFrame->getActiveTab();
++            } else if (direction == brls::FocusDirection::UP) {
++                return (brls::View*)this->inboxBtn;
++            }
++        } else if (tabFrame->getSideBarPosition() == AutoTabBarPosition::TOP) {
++            if (direction == brls::FocusDirection::DOWN) {
++                return (brls::View*)this->tabFrame->getActiveTab();
++            } else if (direction == brls::FocusDirection::LEFT) {
++                return (brls::View*)this->inboxBtn;
++            }
++        }
++        return (brls::View*)nullptr;
++    });
++    this->settingBtn->addGestureRecognizer(new brls::TapGestureRecognizer(this->settingBtn));
++
++    this->inboxBtn->registerClickAction([](brls::View* view) -> bool {
++        if (DialogHelper::checkLogin()) Intent::openInbox();
++        return true;
++    });
++
++    this->inboxBtn->getFocusEvent()->subscribe([this](bool value) {
++        SVGImage* image = dynamic_cast<SVGImage*>(this->inboxBtn->getChildren()[0]);
++        if (!image) return;
++        if (value) {
++            image->setImageFromSVGRes("svg/ico-inbox-activate.svg");
++        } else {
++            image->setImageFromSVGRes("svg/ico-inbox.svg");
++        }
++    });
++    this->inboxBtn->addGestureRecognizer(new brls::TapGestureRecognizer(this->inboxBtn));
+ }
+\ No newline at end of file
+diff --git a/wiliwili/source/main.cpp b/wiliwili/source/main.cpp
+index 06f6e54..e0d9119 100644
+--- a/wiliwili/source/main.cpp
++++ b/wiliwili/source/main.cpp
+@@ -12,6 +12,7 @@
+ #include <borealis.hpp>
+ 
+ #include "utils/config_helper.hpp"
++#include "view/video_comment.hpp"
+ #include "utils/activity_helper.hpp"
+ #include "view/mpv_core.hpp"
+ 
+@@ -20,6 +21,7 @@
+ #endif
+ 
+ int main(int argc, char* argv[]) {
++    std::string startupBv;
+     for (int i = 1; i < argc; i++) {
+         if (std::strcmp(argv[i], "-d") == 0) {
+             brls::Logger::setLogLevel(brls::LogLevel::LOG_DEBUG);
+@@ -27,6 +29,9 @@ int main(int argc, char* argv[]) {
+             brls::Application::enableDebuggingView(true);
+         } else if (std::strcmp(argv[i], "-t") == 0) {
+             MPVCore::TERMINAL = true;
++        } else if (std::strcmp(argv[i], "--bv") == 0) {
++            // 调试用：启动后直接打开指定 BV 号的播放页
++            if (i + 1 < argc) startupBv = argv[++i];
+         } else if (std::strcmp(argv[i], "-o") == 0) {
+             const char* path = (i + 1 < argc) ? argv[++i] : "wiliwili.log";
+             brls::Logger::setLogOutput(std::fopen(path, "w+"));
+@@ -46,6 +51,7 @@ int main(int argc, char* argv[]) {
+     brls::Application::getPlatform()->exitToHomeMode(true);
+ 
+     brls::Application::createWindow("wiliwili");
++
+     brls::Logger::info("createWindow done");
+ 
+     // Register custom view\theme\style
+@@ -53,10 +59,29 @@ int main(int argc, char* argv[]) {
+     Register::initCustomTheme();
+     Register::initCustomStyle();
+ 
++    // 全局右键：若焦点落在某条评论上，复制该评论文字
++    brls::Application::getRightClickEvent()->subscribe([]() {
++        brls::View* view = brls::Application::getCurrentFocus();
++        while (view) {
++            if (auto* comment = dynamic_cast<VideoComment*>(view)) {
++                const auto& msg = comment->getData().content.message;
++                if (!msg.empty()) {
++                    brls::Application::getPlatform()->pasteToClipboard(msg);
++                    brls::Application::notify("评论内容已复制到剪贴板");
++                }
++                return;
++            }
++            view = view->getParent();
++        }
++    });
++
+     brls::Application::getPlatform()->disableScreenDimming(false);
+ 
+     if (brls::Application::getPlatform()->isApplicationMode()) {
+-        Intent::openMain();
++        if (!startupBv.empty())
++            Intent::openBV(startupBv);
++        else
++            Intent::openMain();
+         // Uncomment these lines to debug activities
+         //        Intent::openBV("BV1Da411Y7U4");  // 弹幕防遮挡 (横屏)
+         //        Intent::openBV("BV1iN4y1m7J3");  // 弹幕防遮挡 (竖屏)
+@@ -88,6 +113,7 @@ int main(int argc, char* argv[]) {
+         Intent::openHint();
+     }
+ 
++
+     GA("open_app", {{"version", APPVersion::instance().getVersionStr()},
+                     {"language", brls::Application::getLocale()},
+                     {"window", fmt::format("{}x{}", brls::Application::windowWidth, brls::Application::windowHeight)}})
+diff --git a/wiliwili/source/utils/register_helper.cpp b/wiliwili/source/utils/register_helper.cpp
+index db97d64..6ed9d80 100644
+--- a/wiliwili/source/utils/register_helper.cpp
++++ b/wiliwili/source/utils/register_helper.cpp
+@@ -119,6 +119,7 @@ void Register::initCustomView() {
+ }
+ 
+ void Register::initCustomTheme() {
++    // 页面背景纯白
+     // Add custom values to the theme
+     // 用于左侧边栏背景
+     brls::Theme::getLightTheme().addColor("color/grey_1", nvgRGB(245, 246, 247));
+@@ -201,6 +202,8 @@ void Register::initCustomTheme() {
+ void Register::initCustomStyle() {
+     // Add custom values to the style
+     brls::getStyle().addMetric("brls/animations/highlight", 200);
++    // 侧边栏收窄（默认 410）
++    brls::getStyle().addMetric("brls/tab_frame/sidebar_width", 260);
+     brls::getStyle().addMetric("wiliwili/window/width", brls::Application::ORIGINAL_WINDOW_WIDTH);
+ 
+     if (brls::Application::ORIGINAL_WINDOW_HEIGHT == 544) {
+@@ -242,7 +245,7 @@ void Register::initCustomStyle() {
+                 brls::getStyle().addMetric("wiliwili/grid/span/3", 3);
+                 brls::getStyle().addMetric("wiliwili/grid/span/2", 2);
+         }
+-        brls::getStyle().addMetric("wiliwili/player/width", brls::Application::ORIGINAL_WINDOW_WIDTH - 480);
++        brls::getStyle().addMetric("wiliwili/player/width", brls::Application::ORIGINAL_WINDOW_WIDTH - 390);
+         brls::getStyle().addMetric("wiliwili/player/bottom/font", 13);
+         brls::getStyle().addMetric("wiliwili/comment/level/x", 45);
+         brls::getStyle().addMetric("wiliwili/margin/20", 20);
+diff --git a/wiliwili/source/view/auto_tab_frame.cpp b/wiliwili/source/view/auto_tab_frame.cpp
+index b8ab4d4..c235668 100644
+--- a/wiliwili/source/view/auto_tab_frame.cpp
++++ b/wiliwili/source/view/auto_tab_frame.cpp
+@@ -30,6 +30,8 @@
+  */
+ using namespace brls::literals;
+ 
++// 固定侧边栏像素宽度（不随窗口缩放/全屏变化）
++
+ const std::string autoTabFrameContentXML = R"xml(
+     <brls:Box
+         width="auto"
+@@ -89,8 +91,13 @@ AutoTabFrame::AutoTabFrame() {
+ 
+     this->registerBoolXMLAttribute("disableNavigationDown", [this](bool value) { disableNavigationDown = value; });
+ 
++    this->sidebar->setWidth(AUTO_SIDEBAR_FIXED_PX / brls::Application::windowScale);
++    this->windowSizeSubscription = brls::Application::getWindowSizeChangedEvent()->subscribe([this]() {
++        if (this->tabBarPosition != AutoTabBarPosition::TOP)
++            this->sidebar->setWidth(AUTO_SIDEBAR_FIXED_PX / brls::Application::windowScale);
++    });
+     this->sidebar->setAxis(brls::Axis::COLUMN);
+-    this->sidebar->setPadding(32, 10, 47, 10);
++    this->sidebar->setPadding(22, 0, 26, 0);
+ 
+     // Create Refresh button
+     this->refreshButton = new ButtonRefresh();
+@@ -131,13 +138,13 @@ void AutoTabFrame::setSideBarPosition(AutoTabBarPosition position) {
+             this->setAxis(brls::Axis::ROW);
+             this->setDirection(brls::Direction::RIGHT_TO_LEFT);
+             this->setHorizontalMode(false);
+-            this->sidebar->setWidth(sidebarWidth);
++            this->sidebar->setWidth(AUTO_SIDEBAR_FIXED_PX / brls::Application::windowScale);
+             break;
+         case AutoTabBarPosition::LEFT:
+             this->setAxis(brls::Axis::ROW);
+             this->setDirection(brls::Direction::LEFT_TO_RIGHT);
+             this->setHorizontalMode(false);
+-            this->sidebar->setWidth(sidebarWidth);
++            this->sidebar->setWidth(AUTO_SIDEBAR_FIXED_PX / brls::Application::windowScale);
+             break;
+         default:;
+     }
+@@ -313,6 +320,7 @@ void AutoTabFrame::handleXMLElement(tinyxml2::XMLElement* element) {
+ 
+ AutoTabFrame::~AutoTabFrame() {
+     brls::Logger::debug("delete AutoTabFrame");
++    brls::Application::getWindowSizeChangedEvent()->unsubscribe(this->windowSizeSubscription);
+     if (this->activeTab) {
+         // 直接移除activeTab，销毁的工作交给其对应的 AutoSidebarItem 来处理
+         this->getChildren().erase(this->getChildren().begin() + 1);
+@@ -579,8 +587,8 @@ const std::string autoSidebarItemXML = R"xml(
+                 wireframe="false"
+                 visibility="gone"
+                 id="autoSidebar/item_icon"
+-                width="34"
+-                height="34"/>
++                width="32"
++                height="32"/>
+ 
+             <brls:Label
+                 wireframe="false"
+@@ -721,8 +729,8 @@ const std::string autoSidebarItemInlineXML = R"xml(
+             wireframe="false"
+             id="autoSidebar/item_icon"
+             shrink="0"
+-            width="34"
+-            height="34"/>
++            width="32"
++            height="32"/>
+ 
+     </brls:Box>
+ 
