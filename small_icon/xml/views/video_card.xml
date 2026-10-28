@@ -64,7 +64,7 @@
             axis="column">
         <TextBox
                 id="video/card/label/title"
-                fontSize="20"
+                fontSize="18"
                 lineHeight="1.5"
                 maxRows="2"
                 width="100%"

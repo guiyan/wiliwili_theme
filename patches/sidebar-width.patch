@@ -525,7 +525,7 @@ index 1849d91..dddc8b0 100644
  </brls:Box>
 \ No newline at end of file
 diff --git a/resources/xml/views/video_card.xml b/resources/xml/views/video_card.xml
-index 3b36236..13ff3c6 100644
+index 3b36236..b598ce0 100644
 --- a/resources/xml/views/video_card.xml
 +++ b/resources/xml/views/video_card.xml
 @@ -14,7 +14,7 @@
@@ -537,6 +537,15 @@ index 3b36236..13ff3c6 100644
  
          <brls:Box
                  positionBottom="0"
+@@ -64,7 +64,7 @@
+             axis="column">
+         <TextBox
+                 id="video/card/label/title"
+-                fontSize="20"
++                fontSize="18"
+                 lineHeight="1.5"
+                 maxRows="2"
+                 width="100%"
 diff --git a/resources/xml/views/video_comment.xml b/resources/xml/views/video_comment.xml
 index c74593e..2b5c708 100644
 --- a/resources/xml/views/video_comment.xml
