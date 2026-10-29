@@ -10,7 +10,6 @@
             marginRight="4"
             height="100%"
             justifyContent="center"
-            marginBottom="12"
             axis="column">
         <brls:Image
                 id="userinfo/avatar"
@@ -54,8 +53,8 @@
     <brls:Box
             id="userinfo/box/hint"
             visibility="gone"
-            width="100"
-            height="34"
+            width="77"
+            height="26"
             marginLeft="16"
             cornerRadius="6"
             justifyContent="center"
@@ -64,8 +63,8 @@
                 id="userinfo/svg/hint"
                 width="16"
                 height="16"
-                marginLeft="6"
-                marginRight="6"/>
+                marginLeft="0"
+                marginRight="2"/>
         <brls:Label
                 id="userinfo/label/hint"
                 textColor="@theme/font/grey"

@@ -18,6 +18,7 @@
                 sidebarPosition="left">
 
             <Tab label=""
+                 hideHighlightBorder="true"
                  fontSize="18"
                  icon="@res/svg/ico-home.svg"
                  iconActivate="@res/svg/ico-home-activate.svg">
@@ -25,6 +26,7 @@
             </Tab>
 
             <Tab label=""
+                 hideHighlightBorder="true"
                  fontSize="18"
                  icon="@res/svg/ico-dynamic.svg"
                  iconActivate="@res/svg/ico-dynamic-activate.svg">
@@ -32,6 +34,7 @@
             </Tab>
 
             <Tab label=""
+                 hideHighlightBorder="true"
                  fontSize="18"
                  focusDown="main/inbox"
                  icon="@res/svg/ico-mine.svg"
