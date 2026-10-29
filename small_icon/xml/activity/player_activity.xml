@@ -13,7 +13,8 @@
         <brls:Box
                 id="video_detail_left_box"
                 margin="10"
-                width="@style/wiliwili/player/width"
+                width="auto"
+                grow="1.0"
                 height="auto"
                 wireframe="false"
                 axis="column">
@@ -23,7 +24,7 @@
                     focusable="true"
                     focusDown="video_detail_info_box"
                     grow="1"
-                    width="@style/wiliwili/player/width"
+                    width="100%"
                     height="auto"/>
 
             <!--                        视频下方相关信息-->
@@ -289,9 +290,8 @@
         <!--                页面右侧-->
         <brls:Box
                 id="video_detail_right_box"
-                width="auto"
+                width="420"
                 height="auto"
-                grow="1.0"
                 axis="column">
             <AutoTabFrame
                     id="player/tab_frame"
