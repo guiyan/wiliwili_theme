@@ -29,13 +29,6 @@
                         fontSize="14"
                         textColor="#18191c"
                         text="@i18n/wiliwili/home/common/search"/>
-                <HintLabel
-                        height="35"
-                        positionType="absolute"
-                        positionRight="15"
-                        fontSize="14"
-                        textColor="#18191c"
-                        text="y"/>
             </brls:Box>
         </brls:Box>
 
