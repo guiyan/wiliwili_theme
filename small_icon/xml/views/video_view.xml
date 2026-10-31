@@ -208,7 +208,7 @@
                         horizontalAlign="right"
                         id="video/left/status"
                         height="100%"
-                        fontSize="19"
+                        fontSize="18"
                         width="100"
                         textColor="#FFFFFF"
                         text="00:00"/>
@@ -216,7 +216,7 @@
                         id="video/center/status"
                         horizontalAlign="center"
                         height="100%"
-                        fontSize="19"
+                        fontSize="18"
                         textColor="#FFFFFF"
                         text="/"/>
                 <brls:Label
@@ -224,7 +224,7 @@
                         horizontalAlign="left"
                         id="video/right/status"
                         height="100%"
-                        fontSize="19"
+                        fontSize="18"
                         width="100"
                         textColor="#FFFFFF"
                         text="00:00"/>
@@ -300,7 +300,7 @@
                             height="48">
                         <brls:Label
                                 id="video/quality"
-                                fontSize="19"
+                                fontSize="18"
                                 textColor="#FFFFFF"
                                 focusable="true"
                                 focusUp="video/osd/lock/box"
@@ -318,7 +318,7 @@
                             height="48">
                         <brls:Label
                                 id="video/speed"
-                                fontSize="19"
+                                fontSize="18"
                                 textColor="#FFFFFF"
                                 focusable="true"
                                 focusUp="video/osd/lock/box"
@@ -338,7 +338,7 @@
                             height="48">
                         <brls:Label
                                 id="show/episode"
-                                fontSize="19"
+                                fontSize="18"
                                 textColor="#FFFFFF"
                                 focusable="true"
                                 focusUp="video/osd/lock/box"
