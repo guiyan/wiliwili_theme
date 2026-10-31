@@ -30,7 +30,7 @@
                 width="auto"
                 height="auto"
                 grow="1"
-                fontSize="17"
+                fontSize="16"
                 wireframe="false"
                 maxRows="6"
                 showMore="true"
@@ -55,7 +55,7 @@
                 marginLeft="4"
                 marginRight="30"
                 textColor="@theme/font/grey"
-                fontSize="16"
+                fontSize="15"
                 text="29"/>
         <SVGImage
                 id="comment/svg/dislike"
@@ -73,7 +73,7 @@
                 marginLeft="4"
                 marginRight="10"
                 textColor="@theme/font/grey"
-                fontSize="16"
+                fontSize="15"
                 text="29"/>
     </brls:Box>
 

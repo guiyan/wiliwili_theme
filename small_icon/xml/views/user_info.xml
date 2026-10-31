@@ -44,7 +44,7 @@
                 height="auto"
                 wireframe="false"
                 grow="1"
-                fontSize="18"
+                fontSize="17"
                 marginBottom="4"
                 verticalAlign="center"
                 singleLine="true"
@@ -68,7 +68,7 @@
         <brls:Label
                 id="userinfo/label/hint"
                 textColor="@theme/font/grey"
-                fontSize="16"
+                fontSize="15"
                 marginTop="1"/>
     </brls:Box>
         </brls:Box>
@@ -77,7 +77,7 @@
                 id="userinfo/label/misc"
                 width="auto"
                 height="auto"
-                fontSize="16"
+                fontSize="15"
                 grow="1"
                 marginTop="4"
                 verticalAlign="center"
