@@ -305,7 +305,7 @@
                     sidebarPosition="top">
 
                 <Tab label="@i18n/wiliwili/player/comment"
-                     fontSize="18">
+                     fontSize="16">
                     <brls:Box
                             marginTop="12"
                             backgroundColor="#FFFFFF">
@@ -327,9 +327,9 @@
         </brls:Box>
 
         <ButtonClose
-                width="34"
-                height="34"
-                fontSize="21"
+                width="38"
+                height="38"
+                fontSize="24"
                 positionType="absolute"
                 positionTop="2"
                 positionRight="2"/>
