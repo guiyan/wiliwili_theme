@@ -13,7 +13,7 @@
             width="auto"
             height="auto"
             grow="1"
-            fontSize="17"
+            fontSize="16"
             marginLeft="@style/brls/listitem/descriptionIndent"
             marginRight="@style/brls/listitem/descriptionIndent"/>
 
@@ -29,7 +29,7 @@
                 textColor="#FFFFFF"
                 height="16"
                 horizontalAlign="center"
-                fontSize="15"/>
+                fontSize="14"/>
     </brls:Box>
 
 </brls:Box>

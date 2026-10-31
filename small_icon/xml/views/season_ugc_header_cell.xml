@@ -14,12 +14,12 @@
                 width="auto"
                 height="auto"
                 marginBottom="8"
-                fontSize="20"/>
+                fontSize="19"/>
         <brls:Label
                 id="player/tab/subtitle"
                 width="auto"
                 height="auto"
-                fontSize="18"
+                fontSize="17"
                 textColor="@theme/font/grey"/>
     </brls:Box>
 
