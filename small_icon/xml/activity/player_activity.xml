@@ -47,7 +47,7 @@
                     <brls:Label
                             id="video/title"
                             wireframe="false"
-                            fontSize="21"
+                            fontSize="20"
                             marginLeft="10"
                             singleLine="true"/>
                 </brls:Box>
