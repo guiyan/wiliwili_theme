@@ -172,7 +172,7 @@
                 alignItems="center"
                 justifyContent="center"
                 marginLeft="20"
-                marginTop="6"
+                marginTop="12"
                 height="32"
                 width="32">
             <SVGImage
