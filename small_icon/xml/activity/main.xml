@@ -19,7 +19,7 @@
 
             <Tab label=""
                  hideHighlightBorder="true"
-                 fontSize="18"
+                 fontSize="16"
                  icon="@res/svg/ico-home.svg"
                  iconActivate="@res/svg/ico-home-activate.svg">
                 <HomeTab/>
@@ -27,7 +27,7 @@
 
             <Tab label=""
                  hideHighlightBorder="true"
-                 fontSize="18"
+                 fontSize="16"
                  icon="@res/svg/ico-dynamic.svg"
                  iconActivate="@res/svg/ico-dynamic-activate.svg">
                 <DynamicTab/>
@@ -35,7 +35,7 @@
 
             <Tab label=""
                  hideHighlightBorder="true"
-                 fontSize="18"
+                 fontSize="16"
                  focusDown="main/inbox"
                  icon="@res/svg/ico-mine.svg"
                  iconActivate="@res/svg/ico-mine-activate.svg">
