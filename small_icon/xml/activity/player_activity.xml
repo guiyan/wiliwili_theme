@@ -327,6 +327,9 @@
         </brls:Box>
 
         <ButtonClose
+                width="34"
+                height="34"
+                fontSize="21"
                 positionType="absolute"
                 positionTop="2"
                 positionRight="2"/>
