@@ -173,13 +173,13 @@
                 justifyContent="center"
                 marginLeft="20"
                 marginTop="6"
-                height="44"
-                width="44">
+                height="32"
+                width="32">
             <SVGImage
                     id="video/osd/toggle/icon"
                     wireframe="false"
-                    height="44"
-                    width="44"
+                    height="32"
+                    width="32"
                     SVG="@res/svg/bpx-svg-sprite-play.svg"/>
         </brls:Box>
         <brls:Box
