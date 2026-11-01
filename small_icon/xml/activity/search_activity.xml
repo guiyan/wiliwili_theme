@@ -27,7 +27,7 @@
                 <brls:Label
                         id="search/label/key"
                         fontSize="14"
-                        textColor="#000000"
+                        textColor="#61666d"
                         text="@i18n/wiliwili/home/common/search"/>
             </brls:Box>
         </brls:Box>

@@ -50,7 +50,7 @@
                 cornerRadius="6">
             <brls:Label
                     fontSize="14"
-                    textColor="#000000"
+                    textColor="#61666d"
                     text="@i18n/wiliwili/home/common/search"/>
         </CustomButton>
     </brls:Box>
